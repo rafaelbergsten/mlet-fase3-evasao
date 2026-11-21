@@ -1,0 +1,723 @@
+{
+  "scikit_learn_version": "1.9.1",
+  "random_state": 42,
+  "decision_threshold": 0.5,
+  "selection_metric": "roc_auc",
+  "rows": {
+    "raw": 4424,
+    "clean": 4423,
+    "train": 3538,
+    "test": 885
+  },
+  "dropout_rate": 0.32104906172281256,
+  "cv_folds": 5,
+  "selected": {
+    "key": "logistic_regression",
+    "label": "Regressão logística",
+    "params": {
+      "C": 0.1
+    }
+  },
+  "cross_validation": [
+    {
+      "key": "decision_stump",
+      "label": "Árvore rasa (profundidade 1)",
+      "params": {},
+      "train_accuracy": 0.8064583055095467,
+      "validation_accuracy": 0.8046887860698904,
+      "validation_accuracy_std": 0.01797668275016743,
+      "train_precision": 0.657622054653225,
+      "validation_precision": 0.6560452281848352,
+      "validation_precision_std": 0.025331109623191506,
+      "train_recall": 0.8287855657812478,
+      "validation_recall": 0.8257013679573382,
+      "validation_recall_std": 0.014929783887693266,
+      "train_f1": 0.7333344677381326,
+      "validation_f1": 0.7310670788343181,
+      "validation_f1_std": 0.02134047617227991,
+      "train_roc_auc": 0.8123425749095006,
+      "validation_roc_auc": 0.810225943853929,
+      "validation_roc_auc_std": 0.017029553910616176,
+      "gap": 0.002116631055571583
+    },
+    {
+      "key": "unpruned_tree",
+      "label": "Árvore sem limite de profundidade",
+      "params": {},
+      "train_accuracy": 1.0,
+      "validation_accuracy": 0.7990358721102134,
+      "validation_accuracy_std": 0.011885255860442244,
+      "train_precision": 1.0,
+      "validation_precision": 0.6829127781056019,
+      "validation_precision_std": 0.02561203418991892,
+      "train_recall": 1.0,
+      "validation_recall": 0.7007033001004714,
+      "validation_recall_std": 0.013372226248848991,
+      "train_f1": 1.0,
+      "validation_f1": 0.6914174656323456,
+      "validation_f1_std": 0.014895913468267664,
+      "train_roc_auc": 1.0,
+      "validation_roc_auc": 0.7731284172020029,
+      "validation_roc_auc_std": 0.01036742720275551,
+      "gap": 0.22687158279799713
+    },
+    {
+      "key": "logistic_regression",
+      "label": "Regressão logística",
+      "params": {
+        "C": 0.1
+      },
+      "train_accuracy": 0.8643296266848732,
+      "validation_accuracy": 0.8541493858828982,
+      "validation_accuracy_std": 0.014540153390385136,
+      "train_precision": 0.774361946629816,
+      "validation_precision": 0.7607286578956607,
+      "validation_precision_std": 0.032713112881451095,
+      "train_recall": 0.8153605889223284,
+      "validation_recall": 0.7992966998995286,
+      "validation_recall_std": 0.01729557836614764,
+      "train_f1": 0.7942506422990475,
+      "validation_f1": 0.7790187783443318,
+      "validation_f1_std": 0.017689190642333867,
+      "train_roc_auc": 0.9199786807901873,
+      "validation_roc_auc": 0.9124129007985227,
+      "validation_roc_auc_std": 0.012209501119306963,
+      "gap": 0.007565779991664634
+    },
+    {
+      "key": "random_forest",
+      "label": "Random forest",
+      "params": {
+        "max_depth": null,
+        "min_samples_leaf": 5
+      },
+      "train_accuracy": 0.9113197024862295,
+      "validation_accuracy": 0.8535868114656502,
+      "validation_accuracy_std": 0.01980979857060137,
+      "train_precision": 0.8389444944272769,
+      "validation_precision": 0.7594711220958874,
+      "validation_precision_std": 0.042577673139966195,
+      "train_recall": 0.8959075422960797,
+      "validation_recall": 0.8010626787232399,
+      "validation_recall_std": 0.0231511850935667,
+      "train_f1": 0.8664642507680025,
+      "validation_f1": 0.7789384437541694,
+      "validation_f1_std": 0.024922693708307332,
+      "train_roc_auc": 0.9742815109105767,
+      "validation_roc_auc": 0.9128047192575941,
+      "validation_roc_auc_std": 0.008751713672557981,
+      "gap": 0.06147679165298259
+    },
+    {
+      "key": "gradient_boosting",
+      "label": "Gradient boosting",
+      "params": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "max_iter": 100
+      },
+      "train_accuracy": 0.8918878194846807,
+      "validation_accuracy": 0.862069778406412,
+      "validation_accuracy_std": 0.01274227782913516,
+      "train_precision": 0.8183928699280949,
+      "validation_precision": 0.7782723858524335,
+      "validation_precision_std": 0.0327898228218683,
+      "train_recall": 0.8525542422083617,
+      "validation_recall": 0.8010588144369735,
+      "validation_recall_std": 0.01915258787178848,
+      "train_f1": 0.8350919143558126,
+      "validation_f1": 0.7888301697319884,
+      "validation_f1_std": 0.014935745521311168,
+      "train_roc_auc": 0.9520256864777903,
+      "validation_roc_auc": 0.9149745981088724,
+      "validation_roc_auc_std": 0.008733669064128615,
+      "gap": 0.037051088368917906
+    }
+  ],
+  "test": {
+    "accuracy": 0.8813559322033898,
+    "precision": 0.7973421926910299,
+    "recall": 0.8450704225352113,
+    "f1": 0.8205128205128205,
+    "roc_auc": 0.9355299852358745,
+    "confusion_matrix": [
+      [
+        540,
+        61
+      ],
+      [
+        44,
+        240
+      ]
+    ]
+  },
+  "tree_depth_curve": {
+    "depths": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "train": [
+      0.8123425749095006,
+      0.8584521877500038,
+      0.8890768789608614,
+      0.9049956742128179,
+      0.9168358880367625,
+      0.9299170063350328,
+      0.9425747998178243,
+      0.9552041486475126,
+      0.9667656907326364,
+      0.9761740716629136,
+      0.9840543552664694,
+      0.9896904797251229,
+      0.993100401870268,
+      0.99597709528026,
+      0.9977275940694177,
+      0.9987001737358744,
+      0.9993849561125829,
+      0.9996696627470018,
+      0.9998181536613309,
+      0.9999177892244907
+    ],
+    "validation": [
+      0.810225943853929,
+      0.8576087926715752,
+      0.8848206267958687,
+      0.8916007779078727,
+      0.8788248575164948,
+      0.8677031913287131,
+      0.8605906918981129,
+      0.8320246397155596,
+      0.8112817648833399,
+      0.7880435138634551,
+      0.777396977329775,
+      0.7654587055252922,
+      0.7616157735746769,
+      0.7613501883163372,
+      0.7605935483283762,
+      0.7638865322818271,
+      0.7660913780449196,
+      0.7662242674151438,
+      0.7730257260456296,
+      0.7720083233325177
+    ]
+  },
+  "learning_curve": {
+    "sizes": [
+      283,
+      566,
+      849,
+      1132,
+      1415,
+      1698,
+      1981,
+      2264,
+      2547,
+      2830
+    ],
+    "train": [
+      0.9448529803029176,
+      0.9289375021805929,
+      0.9228832787819913,
+      0.9283974875170656,
+      0.9233283787277029,
+      0.9246563494829594,
+      0.9198313561471482,
+      0.9189475604748767,
+      0.921882560840755,
+      0.9199727599432492
+    ],
+    "validation": [
+      0.8919810197767101,
+      0.9003584532560884,
+      0.9039632662232939,
+      0.9055378519928283,
+      0.9082800127271058,
+      0.9097537087741847,
+      0.910761234317706,
+      0.9114339838944957,
+      0.9121640776015632,
+      0.9124367627662174
+    ]
+  },
+  "importances": [
+    {
+      "feature": "UnidadesCurriculares2SemestreAprovado",
+      "importance": 0.2520640481826065,
+      "std": 0.017215383178746192
+    },
+    {
+      "feature": "UnidadesCurriculares1SemestreAprovado",
+      "importance": 0.06029270464718426,
+      "std": 0.0080119534745811
+    },
+    {
+      "feature": "UnidadesCurriculares2SemestreInscrito",
+      "importance": 0.026970600642122283,
+      "std": 0.004684393550086621
+    },
+    {
+      "feature": "MensalidadesEmDia",
+      "importance": 0.020785193691265726,
+      "std": 0.00307356092226737
+    },
+    {
+      "feature": "Curso",
+      "importance": 0.0067548803637130835,
+      "std": 0.0017043889524288875
+    },
+    {
+      "feature": "UnidadesCurriculares2SemestreCreditado",
+      "importance": 0.006160214196995644,
+      "std": 0.002057175644914651
+    },
+    {
+      "feature": "UnidadesCurriculares1SemestreInscrito",
+      "importance": 0.005845304773733895,
+      "std": 0.0014629012240335911
+    },
+    {
+      "feature": "UnidadesCurriculares1SemestreCreditado",
+      "importance": 0.003585866279206024,
+      "std": 0.0016448971856817187
+    },
+    {
+      "feature": "UnidadesCurriculares2SemestreGrau",
+      "importance": 0.002918844179887986,
+      "std": 0.0012060560049740009
+    },
+    {
+      "feature": "TaxaDesemprego",
+      "importance": 0.0023089451852546404,
+      "std": 0.0007004903454288688
+    },
+    {
+      "feature": "QualificacaoAnterior",
+      "importance": 0.001996086334981606,
+      "std": 0.0010158947077166223
+    },
+    {
+      "feature": "Devedor",
+      "importance": 0.001995793395983242,
+      "std": 0.000692653688682942
+    },
+    {
+      "feature": "Genero",
+      "importance": 0.001762321014271967,
+      "std": 0.0008962547048322118
+    },
+    {
+      "feature": "UnidadesCurriculares1SemestreGrau",
+      "importance": 0.0013923390593142849,
+      "std": 0.0016988100805349073
+    },
+    {
+      "feature": "Bolsista",
+      "importance": 0.0012883457148883282,
+      "std": 0.001173504852481984
+    },
+    {
+      "feature": "Nacionalidade",
+      "importance": 0.0003087577042956424,
+      "std": 0.000616679661170419
+    },
+    {
+      "feature": "EstadoCivil",
+      "importance": 0.00012362025731761926,
+      "std": 0.0004594228723492665
+    },
+    {
+      "feature": "NecessidadesEspeciais",
+      "importance": 7.235593260060958e-05,
+      "std": 7.617033611403512e-05
+    },
+    {
+      "feature": "PIB",
+      "importance": 4.569848374774144e-05,
+      "std": 0.00014573648926913916
+    },
+    {
+      "feature": "NotaAdmissao",
+      "importance": 4.013264277846762e-05,
+      "std": 8.350097559976223e-05
+    },
+    {
+      "feature": "UnidadesCurriculares2SemestreAvaliacoes",
+      "importance": 1.6990461906235542e-05,
+      "std": 0.0005432416099595505
+    },
+    {
+      "feature": "International",
+      "importance": 0.0,
+      "std": 0.0
+    },
+    {
+      "feature": "QualificacaoAnteriorGrau",
+      "importance": -9.549811347280834e-05,
+      "std": 0.00016307101294235323
+    },
+    {
+      "feature": "UnidadesCurriculares1SemestreSemAvaliacoes",
+      "importance": -0.0001491059501769254,
+      "std": 0.00046479542609012434
+    },
+    {
+      "feature": "UnidadesCurriculares2SemestreSemAvaliacoes",
+      "importance": -0.0002469475756368356,
+      "std": 0.0007620385062863957
+    },
+    {
+      "feature": "TaxaInflacao",
+      "importance": -0.0002712615125026352,
+      "std": 0.0002794343247643428
+    },
+    {
+      "feature": "UnidadesCurriculares1SemestreAvaliacoes",
+      "importance": -0.0003193035082374229,
+      "std": 0.0003911563888807659
+    }
+  ],
+  "inputs": {
+    "categories": {
+      "EstadoCivil": [
+        "Solteiro",
+        "Casado",
+        "Divorciado",
+        "União de Fato",
+        "Separado Judicialmente",
+        "Viúvo"
+      ],
+      "Curso": [
+        "Enfermagem",
+        "Gestão",
+        "Serviço Social",
+        "Enfermagem Veterinária",
+        "Jornalismo e Comunicação",
+        "Gestão (presencial noturno)",
+        "Gestão de Publicidade e Marketing",
+        "Turismo",
+        "Design de Comunicação",
+        "Design de Animação e Multimédia",
+        "Serviço Social (prestação nocturna)",
+        "Agronomia",
+        "Ensino Básico",
+        "Engenharia Informática",
+        "Equincultura",
+        "Higiene Oral",
+        "Tecnologias de Produção de Biocombustíveis"
+      ],
+      "QualificacaoAnterior": [
+        "Ensino Secundário",
+        "Curso de Especialização Tecnológica",
+        "Ensino Básico (3º Ciclo)",
+        "Ensino Superior - Licenciatura",
+        "Outro - 11º Ano de Escolaridade",
+        "Ensino Superior - Licenciatura (1º Ciclo)",
+        "Curso Técnico Superior Profissional",
+        "Frequência do Ensino Superior",
+        "12º Ano de Escolaridade - Não Concluído",
+        "Ensino Superior - Mestrado",
+        "Ensino Básico (2º Ciclo)",
+        "Ensino Superior - Mestrado (2º Ciclo)",
+        "11º Ano de Escolaridade - Não Concluído",
+        "10º Ano de Escolaridade - Não Concluído",
+        "Ensino Superior - Doutoramento",
+        "10º Ano de Escolaridade"
+      ],
+      "Nacionalidade": [
+        "Português",
+        "Brasileiro",
+        "Santomense",
+        "Espanhol",
+        "Cabo-verdiano",
+        "Guineense",
+        "Ucraniano",
+        "Italiano",
+        "Moldávia (República da)",
+        "Romeno",
+        "Moçambicano",
+        "Angolano",
+        "Mexicano",
+        "Alemão",
+        "Russo",
+        "Holandês",
+        "Turco",
+        "Colombiano",
+        "Cubano",
+        "Inglês",
+        "Lituano"
+      ],
+      "Genero": [
+        "Feminino",
+        "Masculino"
+      ]
+    },
+    "numeric": {
+      "QualificacaoAnteriorGrau": {
+        "min": 95.0,
+        "max": 190.0,
+        "median": 133.1
+      },
+      "NotaAdmissao": {
+        "min": 95.0,
+        "max": 190.0,
+        "median": 126.1
+      },
+      "UnidadesCurriculares1SemestreCreditado": {
+        "min": 0.0,
+        "max": 20.0,
+        "median": 0.0
+      },
+      "UnidadesCurriculares1SemestreInscrito": {
+        "min": 0.0,
+        "max": 26.0,
+        "median": 6.0
+      },
+      "UnidadesCurriculares1SemestreAvaliacoes": {
+        "min": 0.0,
+        "max": 45.0,
+        "median": 8.0
+      },
+      "UnidadesCurriculares1SemestreAprovado": {
+        "min": 0.0,
+        "max": 26.0,
+        "median": 5.0
+      },
+      "UnidadesCurriculares1SemestreGrau": {
+        "min": 0.0,
+        "max": 18.875,
+        "median": 12.2857142857142
+      },
+      "UnidadesCurriculares1SemestreSemAvaliacoes": {
+        "min": 0.0,
+        "max": 12.0,
+        "median": 0.0
+      },
+      "UnidadesCurriculares2SemestreCreditado": {
+        "min": 0.0,
+        "max": 19.0,
+        "median": 0.0
+      },
+      "UnidadesCurriculares2SemestreInscrito": {
+        "min": 0.0,
+        "max": 23.0,
+        "median": 6.0
+      },
+      "UnidadesCurriculares2SemestreAvaliacoes": {
+        "min": 0.0,
+        "max": 33.0,
+        "median": 8.0
+      },
+      "UnidadesCurriculares2SemestreAprovado": {
+        "min": 0.0,
+        "max": 20.0,
+        "median": 5.0
+      },
+      "UnidadesCurriculares2SemestreGrau": {
+        "min": 0.0,
+        "max": 18.5714285714285,
+        "median": 12.2
+      },
+      "UnidadesCurriculares2SemestreSemAvaliacoes": {
+        "min": 0.0,
+        "max": 12.0,
+        "median": 0.0
+      },
+      "TaxaDesemprego": {
+        "min": 7.6,
+        "max": 16.2,
+        "median": 11.1
+      },
+      "TaxaInflacao": {
+        "min": -0.8,
+        "max": 3.7,
+        "median": 1.4
+      },
+      "PIB": {
+        "min": -4.06,
+        "max": 3.51,
+        "median": 0.32
+      }
+    }
+  },
+  "transformed_feature_means": [
+    -7.44707276186127e-16,
+    -2.4757220330073977e-16,
+    -7.765598979762224e-16,
+    3.396331642530872e-16,
+    3.2007560348153186e-18,
+    -1.5679389825940286e-16,
+    -9.696407987822876e-18,
+    3.654510272692078e-16,
+    5.870249327773545e-16,
+    1.7752820757316973e-16,
+    1.410450802694721e-16,
+    -1.8134479534507574e-16,
+    -5.924065961104018e-16,
+    -4.638115154175276e-16,
+    4.080650144778275e-16,
+    1.6876143093369394e-16,
+    -6.385822089067817e-18,
+    2.0669980393459315e-16,
+    5.004476200317127e-16,
+    -1.2733988224784866e-16,
+    5.387939325272453e-17,
+    -4.760497002565274e-16,
+    2.870011244551069e-16,
+    2.5260868706140505e-18,
+    0.011305822498586773,
+    0.11334087054833239,
+    0.8810062182023742,
+    0.24533634821933295,
+    0.08422837761447145,
+    0.020633126059920858,
+    0.886376483889203,
+    0.006500847936687394,
+    0.0022611644997173543,
+    0.048049745618993785,
+    0.047201808931599774,
+    0.053985302430751836,
+    0.1721311475409836,
+    0.07885811192764274,
+    0.03843979649519502,
+    0.04296212549462974,
+    0.03165630299604296,
+    0.0847936687394008,
+    0.0607687959299039,
+    0.05794234030525721,
+    0.01950254381006218,
+    0.07377049180327869,
+    0.08140192198982477,
+    0.0497456189937818,
+    0.0570944036178632,
+    0.0016958733747880158,
+    0.007631430186546071,
+    0.0497456189937818,
+    0.03759185980780102,
+    0.8405879027699266,
+    0.03335217637083098,
+    0.010175240248728096,
+    0.009044657998869417,
+    0.011871113623516111,
+    0.00791407574901074,
+    0.9768230638778971,
+    0.015262860373092142,
+    0.6514980214810627,
+    0.34850197851893727
+  ],
+  "examples": [
+    {
+      "label": "Exemplo de risco baixo",
+      "values": {
+        "EstadoCivil": "Solteiro",
+        "Curso": "Serviço Social (prestação nocturna)",
+        "QualificacaoAnterior": "Ensino Secundário",
+        "QualificacaoAnteriorGrau": 133.1,
+        "Nacionalidade": "Português",
+        "NotaAdmissao": 97.0,
+        "NecessidadesEspeciais": 0,
+        "Devedor": 0,
+        "MensalidadesEmDia": 1,
+        "Genero": "Feminino",
+        "Bolsista": 1,
+        "International": 0,
+        "UnidadesCurriculares1SemestreCreditado": 0,
+        "UnidadesCurriculares1SemestreInscrito": 6,
+        "UnidadesCurriculares1SemestreAvaliacoes": 8,
+        "UnidadesCurriculares1SemestreAprovado": 6,
+        "UnidadesCurriculares1SemestreGrau": 10.8333333333,
+        "UnidadesCurriculares1SemestreSemAvaliacoes": 0,
+        "UnidadesCurriculares2SemestreCreditado": 0,
+        "UnidadesCurriculares2SemestreInscrito": 6,
+        "UnidadesCurriculares2SemestreAvaliacoes": 7,
+        "UnidadesCurriculares2SemestreAprovado": 6,
+        "UnidadesCurriculares2SemestreGrau": 11.5,
+        "UnidadesCurriculares2SemestreSemAvaliacoes": 0,
+        "TaxaDesemprego": 10.8,
+        "TaxaInflacao": 1.4,
+        "PIB": 1.74
+      }
+    },
+    {
+      "label": "Exemplo de risco intermediário",
+      "values": {
+        "EstadoCivil": "Casado",
+        "Curso": "Gestão (presencial noturno)",
+        "QualificacaoAnterior": "Ensino Secundário",
+        "QualificacaoAnteriorGrau": 130.0,
+        "Nacionalidade": "Português",
+        "NotaAdmissao": 103.8,
+        "NecessidadesEspeciais": 0,
+        "Devedor": 0,
+        "MensalidadesEmDia": 1,
+        "Genero": "Feminino",
+        "Bolsista": 0,
+        "International": 0,
+        "UnidadesCurriculares1SemestreCreditado": 14,
+        "UnidadesCurriculares1SemestreInscrito": 15,
+        "UnidadesCurriculares1SemestreAvaliacoes": 15,
+        "UnidadesCurriculares1SemestreAprovado": 14,
+        "UnidadesCurriculares1SemestreGrau": 11.0714285714,
+        "UnidadesCurriculares1SemestreSemAvaliacoes": 0,
+        "UnidadesCurriculares2SemestreCreditado": 12,
+        "UnidadesCurriculares2SemestreInscrito": 14,
+        "UnidadesCurriculares2SemestreAvaliacoes": 16,
+        "UnidadesCurriculares2SemestreAprovado": 12,
+        "UnidadesCurriculares2SemestreGrau": 11.3333333333,
+        "UnidadesCurriculares2SemestreSemAvaliacoes": 1,
+        "TaxaDesemprego": 9.4,
+        "TaxaInflacao": -0.8,
+        "PIB": -3.12
+      }
+    },
+    {
+      "label": "Exemplo de risco alto",
+      "values": {
+        "EstadoCivil": "Solteiro",
+        "Curso": "Design de Comunicação",
+        "QualificacaoAnterior": "Ensino Secundário",
+        "QualificacaoAnteriorGrau": 128.0,
+        "Nacionalidade": "Português",
+        "NotaAdmissao": 123.5,
+        "NecessidadesEspeciais": 1,
+        "Devedor": 0,
+        "MensalidadesEmDia": 0,
+        "Genero": "Masculino",
+        "Bolsista": 0,
+        "International": 0,
+        "UnidadesCurriculares1SemestreCreditado": 0,
+        "UnidadesCurriculares1SemestreInscrito": 6,
+        "UnidadesCurriculares1SemestreAvaliacoes": 9,
+        "UnidadesCurriculares1SemestreAprovado": 4,
+        "UnidadesCurriculares1SemestreGrau": 12.5,
+        "UnidadesCurriculares1SemestreSemAvaliacoes": 0,
+        "UnidadesCurriculares2SemestreCreditado": 0,
+        "UnidadesCurriculares2SemestreInscrito": 6,
+        "UnidadesCurriculares2SemestreAvaliacoes": 6,
+        "UnidadesCurriculares2SemestreAprovado": 0,
+        "UnidadesCurriculares2SemestreGrau": 0.0,
+        "UnidadesCurriculares2SemestreSemAvaliacoes": 0,
+        "TaxaDesemprego": 9.4,
+        "TaxaInflacao": -0.8,
+        "PIB": -3.12
+      }
+    }
+  ]
+}

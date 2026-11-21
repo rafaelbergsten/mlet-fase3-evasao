@@ -1,0 +1,34 @@
+[project]
+name = "mlet-fase3-evasao"
+version = "0.1.0"
+description = "Binary classification pipeline that predicts student dropout, served through a Streamlit app."
+requires-python = ">=3.12,<3.13"
+dependencies = ["scikit-learn (>=1.9.1,<2.0.0)", "pandas (>=3.1.1,<4.0.0)", "openpyxl (>=3.1.5,<4.0.0)", "joblib (>=1.6.0,<2.0.0)", "streamlit (>=1.67.0,<2.0.0)", "matplotlib (>=3.11.2,<4.0.0)"]
+
+[tool.poetry]
+package-mode = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+extend-exclude = ["notebooks"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N", "UP", "B", "C4", "SIM", "RUF"]
+ignore = ["E501"]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "pytest (>=9.2.0,<10.0.0)",
+    "ruff (>=0.17.6,<0.18.0)",
+    "jupyter (>=1.1.1,<2.0.0)",
+    "nbconvert (>=7.17.2,<8.0.0)"
+]
