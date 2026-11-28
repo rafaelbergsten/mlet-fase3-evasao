@@ -2,7 +2,7 @@
 
 Prova substitutiva da Fase 3 de Machine Learning Engineering (FIAP). O projeto treina um modelo binário que prevê se um aluno vai abandonar o curso, a partir do perfil, da situação financeira e do desempenho nos dois primeiros semestres, e publica o modelo em uma aplicação Streamlit.
 
-- **Aplicação**: _link após o deploy_
+- **Aplicação**: https://mlet-fase3-evasao-ygtgwayrwp6duewmwqgklc.streamlit.app/
 - **Vídeo**: _link após a gravação_
 - **Análise passo a passo**: [`notebooks/analise_evasao.ipynb`](notebooks/analise_evasao.ipynb)
 

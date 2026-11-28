@@ -1,5 +1,5 @@
 Prova Substitutiva - Fase 3 - Machine Learning Engineering
 
-Repositório GitHub: (preencher)
-Aplicação no Streamlit: (preencher)
+Repositório GitHub: https://github.com/rafaelbergsten/mlet-fase3-evasao
+Aplicação no Streamlit: https://mlet-fase3-evasao-ygtgwayrwp6duewmwqgklc.streamlit.app/
 Vídeo: (preencher)
